@@ -1,0 +1,253 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  background-image: url("../images/cloudy-day.png");
+  font-family: "Arial", "Helvetica Neue", Helvetica, sans-serif;
+  height: calc(100vh + 45px);
+}
+
+img {
+  float: left;
+  width: 200px;
+  height: 200px;
+  padding-right: 18px;
+  margin-top: 7px;
+  border-radius: 15px;
+}
+
+.headshot {
+  float: left;
+  width: 200px;
+  height: 200px;
+  margin: 10px 18px 25px 0;
+  border-radius: 15px;
+  padding: 0;
+}
+
+header {
+  background-color: #fafbf7;
+  margin-bottom: 10px;
+  height: 58px;
+  border-bottom: 2px solid #4f9995;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Georgia", Times, Times New Roman, serif;
+  font-weight: bolder;
+}
+
+h1 {
+  float: left;
+  font-size: 1.4em;
+  background-color: #4aaaa5;
+  padding: 0 20px;
+  color: #fafbf7;
+}
+
+nav {
+  float: right;
+}
+
+nav li {
+  display: inline;
+  padding: 0 5px;
+}
+
+.border-right {
+  border-right: 1px solid #ddad8f;
+}
+
+nav li a {
+  padding: 10px;
+  text-decoration: none;
+  color: #333;
+}
+
+nav a:hover {
+  background-color: #ddad8f;
+  border-radius: 15px;
+  transition: all 0.3s ease 0s;
+}
+
+.header-content {
+  width: 100%;
+  margin: auto;
+  line-height: 58px;
+}
+
+.container {
+  width: 960px;
+  margin: auto;
+  margin-top: 25px;
+  padding: 35px 50px;
+  background-color: #fafbf7;
+  line-height: 1.6;
+  color: #151717;
+  border-radius: 15px;
+}
+
+.container-content {
+  padding-top: 10px;
+  height: 360px;
+}
+
+h2 {
+  text-align: left;
+  color: #4f9995;
+  font-size: 1.4em;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background-color: #ddad8f;
+  color: #ddad8f;
+}
+
+footer {
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+  background-color: #fafbf7;
+  border-top: 6px solid #ddad8f;
+  height: 45px;
+  position: fixed;
+}
+
+footer span {
+  bottom: 5px;
+  right: 0;
+  left: 0;
+  position: absolute;
+}
+
+input:not([type="submit"]) {
+  width: 100%;
+  padding: 5px;
+}
+
+input[type="submit"] {
+  background-color: #4f9995;
+  padding: 13px 20px;
+  font-size: 15px;
+  border-radius: 25px;
+  display: block;
+  margin: auto;
+  letter-spacing: 0.2em;
+  color: white;
+  transition: all 0.3s ease 0s;
+}
+
+input[type="submit"]:hover {
+  background-color: rgb(221, 173, 143);
+  cursor: pointer;
+  box-shadow: 0px 15px 20px rgb(221, 173, 143, 0.4);
+  transform: translateY(-3px);
+}
+
+textarea {
+  width: 100%;
+  height: 140px;
+}
+
+.main-gallery {
+  height: calc(100vh - 135px);
+  width: 960px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  overflow: scroll;
+}
+
+figure.portLink {
+  position: relative;
+  z-index: 2;
+  margin: 10px;
+}
+
+figure img {
+  padding: 0;
+}
+
+figcaption {
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 0.8em 0;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.quote {
+  color: #ddad8f;
+  text-align: center;
+}
+
+p {
+  padding-top: 10px;
+  text-indent: 2em;
+}
+
+@media screen and (max-width: 980px) {
+  .container {
+    max-width: 75%;
+    overflow-y: scroll;
+  }
+  .main-gallery {
+    max-width: 75%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 90%;
+    height: 100%;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .container {
+    max-width: 90%;
+    height: 100%;
+  }
+
+  h1 {
+    width: 100%;
+    text-align: center;
+  }
+
+  nav {
+    width: 100%;
+    text-align: center;
+    background-color: #fafbf7;
+    margin-bottom: 10px;
+  }
+
+  .headshot {
+    width: 100%;
+    height: 90%;
+    object-fit: cover;
+  }
+
+  .main-gallery {
+    height: calc(100vh - 180px);
+    text-align: center;
+    max-width: 100%;
+  }
+}
